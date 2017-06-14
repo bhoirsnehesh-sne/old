@@ -10,14 +10,14 @@
         var vm = this;
 
         vm.user = null;
-       // vm.allUsers = [];
+        vm.allUsers = [];
         vm.deleteUser = deleteUser;
 
         initController();
 
         function initController() {
             loadCurrentUser();
-           // loadAllUsers();
+           loadAllUsers();
         }
 
         function loadCurrentUser() {
