@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
     'use strict';
 
     angular
@@ -10,7 +10,6 @@
         var vm = this;
 
         vm.user = null;
-        
         vm.allUsers = [];
         vm.deleteUser = deleteUser;
 
@@ -42,12 +41,7 @@
             });
         }
         
-       /* function deleteUser(id) {
-            UserService.Delete(id)
-            .then(function () {
-                loadCurrentUser();
-            });
-        }*/
+       
     }
 
 })();
