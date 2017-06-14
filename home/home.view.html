@@ -2,7 +2,7 @@
 <p>You're logged in!!</p>
 <h3>All registered users:</h3>
 <ul>
-   <li ng-repeat="user in vm.users"> 
+   <li ng-repeat="user in vm.allUsers"> 
         {{user.username}} ({{user.firstName}} {{user.lastName}})
         <a ng-click="vm.deleteUser(user.id)">Delete</a>
     </li>
