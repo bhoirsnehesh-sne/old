@@ -2,10 +2,10 @@
 <p>You're logged in!!</p>
 <!--<h3>All registered users:</h3>-->
 <ul>
-    <li ng-repeat="user in vm.currentUser">
+   <!-- <li ng-repeat="user in vm.currentUser"> -->
         {{user.username}} ({{user.firstName}} {{user.lastName}})
         - <a ng-click="vm.deleteUser(user.id)">Delete</a>
-    </li>
+    <!--</li>-->
 </ul>
 <p>&nbsp;</p>
 <p><a href="#!/login" class="btn btn-primary">Logout</a></p>
