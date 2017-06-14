@@ -35,19 +35,19 @@
                 });
         }
 
-       /* function deleteUser(id) {
+     function deleteUser(id) {
             UserService.Delete(id)
             .then(function () {
                 loadAllUsers();
             });
-        }*/
+        }
         
-        function deleteUser(id) {
+       /* function deleteUser(id) {
             UserService.Delete(id)
             .then(function () {
                 loadCurrentUser();
             });
-        }
+        }*/
     }
 
 })();
