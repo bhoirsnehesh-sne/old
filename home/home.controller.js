@@ -27,12 +27,12 @@
                 });
         }
 
-     /* function loadAllUsers() {
+     function loadAllUsers() {
             UserService.GetAll()
                 .then(function (users) {
                     vm.allUsers = users;
                 });
-        }*/
+        }
 
        /* function deleteUser(id) {
             UserService.Delete(id)
