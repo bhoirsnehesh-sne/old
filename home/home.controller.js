@@ -10,6 +10,7 @@
         var vm = this;
 
         vm.user = null;
+        vm.currentUser = [];
         vm.allUsers = [];
         vm.deleteUser = deleteUser;
 
@@ -23,16 +24,16 @@
         function loadCurrentUser() {
             UserService.GetByUsername($rootScope.globals.currentUser.username)
                 .then(function (user) {
-                    vm.user = user;
+                    vm.currentUser = user;
                 });
         }
 
-     function loadAllUsers() {
+   /*  function loadAllUsers() {
             UserService.GetAll()
                 .then(function (users) {
                     vm.allUsers = users;
                 });
-        }
+        }*/
 
        /* function deleteUser(id) {
             UserService.Delete(id)
