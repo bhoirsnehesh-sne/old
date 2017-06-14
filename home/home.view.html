@@ -1,10 +1,10 @@
-﻿<h1>Hi {{vm.currentUser.firstName}}!</h1>
+﻿<h1>Hi {{vm.current_User.firstName}}!</h1>
 <p>You're logged in!!</p>
 <!--<h3>All registered users:</h3>-->
 <ul>
    <!-- <li ng-repeat="user in vm.currentUser"> -->
-        {{user.username}} ({{user.firstName}} {{user.lastName}})
-        - <a ng-click="vm.deleteUser(user.id)">Delete</a>
+        {{current_User.username}} ({{current_User.firstName}} {{current_User.lastName}})
+        - <a ng-click="vm.deleteUser(current_User.id)">Delete</a>
     <!--</li>-->
 </ul>
 <p>&nbsp;</p>
