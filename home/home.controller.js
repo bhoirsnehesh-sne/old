@@ -10,7 +10,7 @@
         var vm = this;
 
         vm.user = null;
-        vm.current_User = current_User;
+        vm.current_User = [];
         vm.allUsers = [];
         vm.deleteUser = deleteUser;
 
@@ -23,7 +23,7 @@
 
         function loadCurrentUser() {
             UserService.GetByUsername($rootScope.globals.currentUser.username)
-                .then(function (user) {
+                .then(function (current_User) {
                     vm.current_User = user;
                 });
         }
