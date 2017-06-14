@@ -10,14 +10,14 @@
         var vm = this;
 
         vm.user = null;
-        vm.allUsers = [];
+       // vm.allUsers = [];
         vm.deleteUser = deleteUser;
 
         initController();
 
         function initController() {
             loadCurrentUser();
-            loadAllUsers();
+           // loadAllUsers();
         }
 
         function loadCurrentUser() {
@@ -27,17 +27,24 @@
                 });
         }
 
-        function loadAllUsers() {
+     /* function loadAllUsers() {
             UserService.GetAll()
                 .then(function (users) {
                     vm.allUsers = users;
                 });
-        }
+        }*/
 
-        function deleteUser(id) {
+       /* function deleteUser(id) {
             UserService.Delete(id)
             .then(function () {
                 loadAllUsers();
+            });
+        }*/
+        
+        function deleteUser(id) {
+            UserService.Delete(id)
+            .then(function () {
+                loadCurrentUser();
             });
         }
     }
